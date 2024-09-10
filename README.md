@@ -1,7 +1,7 @@
 <h1 align="center">Oi 👋, me chamo Victor Hugo</h1>
 <h3 align="center">Apaixonado por dados</h3>
 
-- 🔭 Atualmente estou trabalhando com **análise de dados para biossensores.**
+- 🔭 Atualmente estou trabalhando com **análise de dados para biossensores.** <a href="[https://linkedin.com/in/victorhugovm](https://github.com/vh141201/projetos/blob/main/interface_visualizacao_biosenssores.py)" target="blank"> Visualização de PalmSens4</a>
 
 - 🌱 Atualmente estou aprendendo **Airflow e Kafka**
 
