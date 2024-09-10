@@ -4,3 +4,5 @@ de ferramentas de visualização de dados como MDS e T-SNE consegue, logo após 
 A imagem a) que está neste diretório ilustra um pouco da interface do programa, e a imagem b) ilustra um exemplo de uso com várias medidas de sensores.
 Cada cor é um tipo de sensor diferente (que está em outra pasta). A idéia é, se o sensor sai muito do cluster central de sensores, ele deve ser descartado.
 Isso poupa tempo na hora de escolher os sensores ideais ou descartar os defeituosos.
+
+O programa deve ser utilizado uma IDE de Python para Android, como Pydroid 3.
