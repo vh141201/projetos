@@ -1,5 +1,5 @@
 <h1 align="center">Oi 👋, me chamo Victor Hugo</h1>
-<h3 align="center">A passionate frontend developer from India</h3>
+<h3 align="center">Apaixonado por dados</h3>
 
 - 🔭 Atualmente estou trabalhando com **análise de dados para biossensores.**
 
