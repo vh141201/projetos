@@ -74,7 +74,7 @@ try:
             y_pred_rf.append(pred_rf)
             y_pred_rl.append(pred_rl)
 
-        print(f"Chamada {dados_chamada['call_id']}, Real: {dados_chamada['is_fraud_real']}, Predito -> KNN:{pred_knn} RF:{pred_rf} RL:{pred_rl}")
+        print(f"Chamada {dados_chamada['call_id']}, é fraude? {dados_chamada['is_fraud_real']}, Predito -> KNN:{pred_knn} RF:{pred_rf} RL:{pred_rl}")
 
 except KeyboardInterrupt:
     print("\n" + "="*50)

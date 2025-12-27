@@ -63,7 +63,7 @@ def run_real_time_generator():
             payload = json.dumps(data).encode('utf-8')
             producer.produce('chamadas-telefonicas', value=payload, callback=delivery_report)
             producer.poll(0) 
-            print(f"ENVIADO: ID {call_counter} | Real: {data['is_fraud_real']}")
+            print(f"ENVIADO: ID {call_counter} | É fraude?: {data['is_fraud_real']}")
             call_counter += 1
             time.sleep(data['arrival_interval']) 
     except KeyboardInterrupt:
