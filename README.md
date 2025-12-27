@@ -22,5 +22,5 @@
 
 Repositório centralizado com minhas soluções em Dados, ML e Engenharia.
 
-### 📞 [CallCenter Kafka](./CallCenter)
+### 📞 [CallCenter Kafka](./Streaming data/CallCenter)
 Processamento de streaming em tempo real com Kafka e modelos de ML (KNN, RF, LogReg).
