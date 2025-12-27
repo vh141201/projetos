@@ -45,6 +45,7 @@ print("Iniciando producer.")
 def rtclicks_generator():
     try:
         while True:
+            print("Ta  rodando nao desespera.")
             items_numb = random.randint(1, len(cart_items))
             data = {
                 "user_id": random.choice(users),
@@ -53,11 +54,12 @@ def rtclicks_generator():
                 "device": random.choices(device_type, weights=weights_device, k=1)[0],
                 "cart": random.choices(cart_items, k=items_numb)[0],
                 "location": random.choices(location, weights=weights_location, k=1)[0],
+                "load_time_ms": random.randint(150, 2500),
                 "timestamp": datetime.now().isoformat()
             }
 
             producer.send('web_clicks', value=data, headers=[('version', b'1.0')])
-            time.sleep(0.1)
+            time.sleep(random.uniform(0.2, 1.2))
 
     except KeyboardInterrupt:
         print("Finalizando.")
