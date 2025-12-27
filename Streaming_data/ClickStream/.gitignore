@@ -1,2 +1,5 @@
-./venv/
-./checkpoint
+src/data/
+src/checkpoint/
+src/checkpoint_delta/
+.venv/
+venv/
