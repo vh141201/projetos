@@ -14,3 +14,6 @@ Real time data processing pipeline utilizing Apache Kafka, Docker and decision m
 3. Up Kafka with Docker Compose: `docker-compose up -d`
 4. Run the producer: `python streamer_kafka_producer.py`
 5. Run the consumer: `python ml_streaming_processor.py`
+
+## Schema
+![pipeline schema]./assets/fig0_Callcenter_schema.png
