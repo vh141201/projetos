@@ -1,7 +1,7 @@
 # Callcenter ML Streaming Project
 
 Real time events processing pipeline utilizing Apache Kafka, PySpark for ETL
-data processing and big data analysis. Then I made an interactive dashboard
+data processing and big data analysis, saving the data in a Delta Lake format. Then I made an interactive dashboard
 utilizing Power BI to present the results.  
 
 ## Project architecture
@@ -26,3 +26,7 @@ utilizing Power BI to present the results.
 3. Up Kafka with Docker Compose: `docker-compose up -d`
 4. Run the producer: `python producer.py`
 5. Run the consumer (another terminal): `python spark_processor.py`
+
+
+## Schema
+![Esquema do Clickstream](./assets/fig0_ClickstreamSchema.png)
