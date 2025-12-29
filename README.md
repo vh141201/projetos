@@ -21,10 +21,10 @@
 # Meus projetos no portfólio
 
 Repositório centralizado com minhas soluções em dados e ML.
-
-### 📞 [CallCenter Kafka](./Streaming_data/CallCenter)
+https://github.com/vh141201/projetos/tree/main/
+### 📞 [CallCenter Kafka](./1.%20Streaming_data/CallCenter)
 Processamento de streaming em tempo real com Kafka e modelos de ML para decidir se as chamadas são tentativa de golpe ou não (KNN, RF, LogReg). Os dados são simulados por código, de tal modo que tenham coerência com a realidade.
 
-### [Real time clicks using PySpark](./1.Streaming_data/ClickStream)
+### [Real time clicks using PySpark](./1.%20Streaming_data/ClickStream)
 Processamento de streaming em tempo real com Kafka e PySpark, armazenando os dados em um Delta Lake. Os dados são usados para montar um dashboard interativo no Power BI. 
 
