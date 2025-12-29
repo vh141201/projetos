@@ -16,4 +16,4 @@ Real time data processing pipeline utilizing Apache Kafka, Docker and decision m
 5. Run the consumer: `python ml_streaming_processor.py`
 
 ## Schema
-![pipeline schema]./assets/fig0_Callcenter_schema.png
+![Esquema do Call Center](./assets/fig0_Callcenter_schema.png)
