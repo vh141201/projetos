@@ -32,7 +32,7 @@ utilizing Power BI to present the results.
 ![Esquema do Clickstream](./assets/fig0_ClickstreamSchema.png)
 
 ## Dashboard
-![Dashboard do Clickstream](1.%20Streaming_data/ClickStream/assets/assets/fig1_dashboard.png)
+![Dashboard do Clickstream](./assets/fig1_dashboard.png)
 
 ## Technical note: manual refresh
 Due to Power BI native limitation where auto refresh is only available for DirectQuery connections, this dashboard uses Import Mode to read the local Delta/Parquet files. While the Spark pipeline processes data in real-time, the dashboard requires a manual refresh to pull the latest processed batches from the local disk. In a cloud production environment, this would be bypassed using DirectQuery or streaming datasets.
