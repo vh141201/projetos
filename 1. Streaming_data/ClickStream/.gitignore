@@ -1,4 +1,4 @@
-src/data/
+src/data/clickstream_gold
 src/checkpoint/
 src/checkpoint_delta/
 .venv/
