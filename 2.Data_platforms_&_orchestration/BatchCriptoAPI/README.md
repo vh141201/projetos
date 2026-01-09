@@ -36,7 +36,7 @@ git checkout main
 6. Enable the DAG: Activate extraction_crypto_api_to_s3 in the Airflow dashboard.
 
 ## Schema
-![Architecture Schema](./assets/fig0_schema.png)
+![Architecture Schema](./assets/fig0_schemas.png)
 
 ## Analysis & Evidence
 ![Athena Query Result](./assets/fig2_athena_sql_querry.PNG)
