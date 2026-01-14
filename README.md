@@ -26,5 +26,9 @@ Real time data processing pipeline utilizing Apache Kafka, Docker and decision m
 ### [Real time clicks using PySpark](./1.%20Streaming_data/ClickStream)
 Real time events processing pipeline utilizing Apache Kafka, PySpark for ETL data processing and big data analysis, saving the data in a Delta Lake format. Then I made an interactive dashboard utilizing Power BI to present the results.
 
+### [Higgs boson ML detection](./Others/Análises%20estatísticas/ML-Collider.ipynb)
+Using data based on real CERN particle collision, I've applied many machine learning algorithms to determine wether a particle
+was or wasn't a Higgs boson, and then I made a table comparing all the different methods.
+
 ### [Crypto Medallion Data Pipeline: Airflow, S3 & Athena](./2.Data_platforms_%26_orchestration/BatchCriptoAPI)
 An automated data pipeline for monitoring and analyzing cryptocurrency prices (BTC, ETH, SOL, ADA). This project implements a Medallion Architecture to organize a Data Lake on AWS, ensuring data integrity from raw extraction to the final analytical layer.
