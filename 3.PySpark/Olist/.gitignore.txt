@@ -1,0 +1,30 @@
+# Dados e Datasets
+*.csv
+*.json
+*.parquet
+*.avro
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+
+# Spark e Derby
+spark-warehouse/
+metastore_db/
+derby.log
+*.lzo
+*.crc
+.sparkStaging/
+
+# IDEs e Sistema
+.vscode/
+.idea/
+.DS_Store
+
+# Credenciais
+.kaggle/
+kaggle.json
+.env
