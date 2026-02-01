@@ -1,6 +1,8 @@
 import requests
 import os
+from dotenv import load_dotenv
 
+load_dotenv() # Isso carrega as chaves do arquivo .env
 # Configurações via Variáveis de Ambiente (Segurança)
 TELEGRAM_TOKEN = os.getenv('TELEGRAM_TOKEN')
 CHAT_ID = os.getenv('TELEGRAM_CHAT_ID')
