@@ -43,7 +43,8 @@ def enviar_telegram(mensagem):
 if __name__ == "__main__":
     vagas = buscar_vagas()
     if vagas:
-        header = "🚀 Novas Vagas de Engenharia de Dados encontradas!\n\n"
+        header = "🚀 Novas Vagas encontradas!\n\n"
         enviar_telegram(header + "\n".join(vagas))
+        print("Mensagem enviada para o Telegram!")
     else:
-        print("Nenhuma vaga encontrada com as palavras-chave no momento.")
+        print("Script rodou, mas nenhuma vaga foi encontrada com as palavras-chave.")
