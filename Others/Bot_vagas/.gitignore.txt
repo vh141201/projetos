@@ -1,0 +1,23 @@
+# Chaves e Segredos (🚨 CRÍTICO)
+.env
+secrets.json
+credentials.json
+*.pem
+*.key
+
+# Pastas de Ambiente Virtual (Python)
+venv/
+.venv/
+env/
+bin/
+obj/
+
+# Arquivos do Sistema e IDE
+.vscode/
+.idea/
+.DS_Store
+__pycache__/
+*.py[cod]
+
+# Logs
+*.log
