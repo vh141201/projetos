@@ -137,7 +137,7 @@ WHERE n_repeticao = 1").show()
 '''
 
 # 12. Para cada cliente, calcule quanto tempo (em dias) passou entre a compra atual e a compra anterior dele.
-'''
+
 spark.sql("WITH historico_cliente AS ( \
    SELECT c.customer_unique_id, \
           o.order_id, \
@@ -153,11 +153,11 @@ spark.sql("WITH historico_cliente AS ( \
  FROM historico_cliente \
  WHERE data_compra_anterior IS NOT NULL \
  ").show()
-'''
+
 # 13. Descobrir qual a categoria de produto mais vendida em cada estado brasileiro.
 # linkamos oi -> p
 # linkas oi -> o -> c
-'''
+
 spark.sql("WITH pega_dados AS ( \
   SELECT c.customer_state, \
          p.product_category_name, \
@@ -175,7 +175,7 @@ spark.sql("WITH pega_dados AS ( \
 SELECT * from ranqueia \
 WHERE rnk = 1 \
 ").show()
-'''
+
 '''
 # 14. Calcule o faturamento acumulado da Olist ao longo do tempo (dia a dia).
 spark.sql(" WITH somma AS ( \
