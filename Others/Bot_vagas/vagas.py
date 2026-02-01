@@ -2,19 +2,19 @@ import requests
 import os
 from dotenv import load_dotenv
 
-load_dotenv() # Isso carrega as chaves do arquivo .env
-# Configurações via Variáveis de Ambiente (Segurança)
+# Tenta carregar o .env apenas se o arquivo existir (uso local)
+load_dotenv()
+
+# Prioriza as variáveis de ambiente (Secrets do GitHub)
 TELEGRAM_TOKEN = os.getenv('TELEGRAM_TOKEN')
 CHAT_ID = os.getenv('TELEGRAM_CHAT_ID')
 
-# Repositórios para monitorar
 REPOS = [
     "backend-br/vagas",
     "frontendbr/vagas",
     "devops-br/vagas"
 ]
 
-# Palavras-chave de Engenharia de Dados
 KEYWORDS = ["data", "dados", "etl", "airflow", "spark", "dbt", "python", "sql"]
 
 def buscar_vagas():
@@ -26,12 +26,16 @@ def buscar_vagas():
             issues = response.json()
             for issue in issues:
                 title = issue['title'].lower()
-                # Verifica se alguma palavra-chave está no título
                 if any(key in title for key in KEYWORDS):
                     vagas_encontradas.append(f"📍 {repo}\n🔗 {issue['html_url']}\n{issue['title']}\n")
     return vagas_encontradas
 
 def enviar_telegram(mensagem):
+    # Verificação de segurança para não quebrar sem as chaves
+    if not TELEGRAM_TOKEN or not CHAT_ID:
+        print("Erro: Chaves do Telegram não encontradas!")
+        return
+    
     url = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage"
     payload = {"chat_id": CHAT_ID, "text": mensagem}
     requests.post(url, json=payload)
@@ -41,3 +45,5 @@ if __name__ == "__main__":
     if vagas:
         header = "🚀 Novas Vagas de Engenharia de Dados encontradas!\n\n"
         enviar_telegram(header + "\n".join(vagas))
+    else:
+        print("Nenhuma vaga encontrada com as palavras-chave no momento.")
